@@ -1,0 +1,136 @@
+#login_bg {
+    background: #019875 url(img/bgwall.png) center 100px no-repeat;
+    overflow: hidden;
+}
+
+.login_wrapper {
+    width: 640px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 16px;
+    padding-top: 110px;
+}
+.login_header {
+    position: relative;
+    margin-bottom: 20px;
+}
+.login_box {
+    min-height: 150px;
+    background: #eafffd;
+    padding: 40px;
+    overflow: hidden;
+}
+#loginForm {
+    width: 360px;
+    margin: 0;
+    border-right: 1px dashed #999;
+    float: left;
+}
+#loginForm input#email {
+    width: 296px;
+    font-size: 16px;
+    color: #777;
+    border: none;
+}
+#loginForm input#password {
+    width: 296px;
+    font-size: 16px;
+    color: #777;
+    border: none;
+}
+.fl {
+    float: left !important;
+}
+.fr {
+    float: right !important;
+}
+.submitLogin {
+    width: 155px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 46px;
+    clear: both;
+    float: left;
+    background: #019875;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+.registor_now:hover {
+    color: #019875;
+    text-decoration: underline;
+}
+.icon_wb {
+    width: 54px;
+    height: 54px;
+    float: left;
+    background: url(img/wbqq.png) left top no-repeat;
+    margin: 0 30px 0 10px;
+}
+.icon_qq {
+    width: 54px;
+    height: 54px;
+    float: left;
+    background: url(img/wbqq.png) right top no-repeat;
+}
+.login_box_btm {
+    background: url(img/login_btm.png) repeat-x;
+    height: 10px;
+}
+.registor_now {
+    color: #019875;
+    background: url(img/registor_now.png) right center no-repeat;
+    padding-right: 24px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.login_wrapper span.error {
+    margin: -10px 0 10px 0;
+}
+#loginForm span.error {
+    margin: -10px 0 10px 0;
+}
+span.error {
+    display: block;
+    margin: 5px 0 10px 0;
+    font-size: 14px;
+    color: #ff6a6a;
+    text-align: left;
+    background: url(img/error.png) 0 3px no-repeat;
+    padding-left: 20px;
+    line-height: 22px;
+}
+#loginForm .fr:hover {
+    color: #019875;
+}
+#loginForm .fr {
+    color: #777;
+    margin-right: 45px;
+}
+#cloud_s {
+    position: absolute;
+    left: 375px;
+    top: 15px;
+}
+
+#cloud_m {
+    position: absolute;
+    left: 470px;
+    top: -35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
