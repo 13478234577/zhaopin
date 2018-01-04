@@ -12,6 +12,7 @@ public interface User_DB
     User select_userinfo(User user);
     List selectQuestion();
     List select_jobinfo();
+    boolean select_user(User user);
     boolean insert(User user);
 
     boolean update_userinfo(User user);

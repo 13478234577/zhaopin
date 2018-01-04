@@ -172,10 +172,73 @@ return li;
     }
 
 
+    @Override
+    public boolean select_user(User user)
+    {
+
+        try
+        {
+            conn = DBUtil.connedDB();
+
+            sql = "select * from USERS_INFO where username=?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1,user.getUsername());
+
+            rs = ps.executeQuery();
+            if(rs.next())
+            {
+                DBUtil.releaseDB(ps,rs);
+                return false;
+            }
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        DBUtil.releaseDB(ps,rs);
+//        System.out.println(t);
+
+
+        return true;
+    }
+
+
+//    @Override
+    public List select_job(String job)
+    {
+        Job jobs=new Job();
+
+        try
+        {
+            conn = DBUtil.connedDB();
+
+            sql = "select * from JOB_INFO where jobname like ?";
+
+            ps = conn.prepareStatement(sql);
+
+            ps.setString(1,"%"+job+"%");
+            rs = ps.executeQuery();
+            while (rs.next())
+            {
+                job=null;
+//                user.setId(rs.getInt("userid"));
+//                user.setBirthday(rs.getDate("birthday"));
+//                user.setName(rs.getString("uname"));
+                li.add(job);
+            }
 
 
 
+            DBUtil.releaseDB(ps,rs);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        DBUtil.releaseDB(ps,rs);
+        System.out.println(t);
 
+        return li;
+    }
 
     @Override
     public List selectQuestion()
